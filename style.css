@@ -1,0 +1,707 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+   background-color: #000;
+}
+
+.nav {
+    width: 100%;
+    height: 108px;
+    display: grid;
+    place-items: center;
+    background-color: #000;
+}
+
+.bar {
+    width: 1260px;
+    height: 108px;
+    display: flex;
+    
+}
+
+.bar .logo {
+    width: 280px;
+    height: 108px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+ 
+}
+
+.logo img {
+margin-bottom: 25px;
+cursor: pointer;
+}
+.logo h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.bar .toglle {
+    width: 80%;
+    height: 108px;
+    display: flex;
+    position: relative;
+  
+}
+
+.toglle  .statement {
+     width: 315px;
+     height: 25px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: absolute;
+     top: 0;
+     right: 0;
+
+     
+}
+
+.statement h3 {
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.statement i {
+    font-size: 16px;
+    color: #fff;
+}
+h3:hover {
+    color: blue;
+}
+
+.statement i:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+
+.veicols {
+    width: 787px;
+    height: 30px;
+    margin-top: 67px;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.veicols ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+#list {
+    display: flex;
+    flex-direction: row;
+}
+
+.veicols li {
+    display: flex;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+
+li:hover {
+    color: blue;
+}
+
+li:first-child:hover {
+    color: #fff;
+}
+
+ul i {
+    cursor: pointer;
+}
+
+.carousel-item img {
+    object-fit: contain;
+}
+
+.carousel {
+    width: 90%;
+    height: 80vh;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-item h1 {
+position: absolute;
+top: 70px;
+left: 200px;
+color: #fff;
+font-size: 48px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.carousel-item button {
+    width: 305px;
+    height: 39px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    color: #fff;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #333333;
+
+    }
+
+    .carousel-item button:hover {
+        background-color: #292929;
+    }
+
+    .scrool {
+        width: 274px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        position: fixed;
+        z-index: 9999;
+        top: 450px;
+        right: 0;
+        transform: translateY(-50%);
+      
+    }
+
+    .a {
+        width: 274px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: -85%;
+        top: 0;
+        background-color: #333333;
+    }
+
+    .c i {
+     width: 100%;
+    font-size: 30px;
+    color: #fff;
+    font-size: 30px;
+    margin-left: 8px;
+    }
+
+    .b i {
+        font-size: 30px;
+        color: #fff;
+        font-size: 30px;
+        margin-left: 6px;
+
+        }
+
+
+        .b span {
+            color: #fff;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .a i {
+            font-size: 30px;
+            color: #fff;
+            font-size: 30px;
+            margin-left: 6px;
+            }
+
+            .a span {
+                color: #fff;
+                margin-left: 10px;
+                font-size: 20px;
+            }
+
+        
+
+    .c:hover {
+        transition: 1s;
+        margin-right: 80%;
+        color: #00adef;
+    }
+
+    .c i:hover {
+        color: #00adef;
+    }
+
+    .a:hover {
+        transition: 1s;
+        margin-right: 80%;
+    }
+
+
+    .b:hover {
+        transition: 1s;
+        margin-right: 80%;
+    }
+    
+    .b {
+        width: 274px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: -85%;
+        top: 53px;
+        background-color: #333333;
+    }
+
+    .c {
+        width: 274px;
+        height: 44px;
+        position: absolute;
+        right: -85%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #333333;
+    }
+
+.input {
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.input input {
+    width: 60%;
+    height: 39px;
+     text-indent: 15px;
+    border: none;
+    outline: none;
+    
+}
+
+.input i {
+    width: 3%;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.mersedes {
+    width: 100%;
+    height: 521px;
+    display: grid;
+    place-items: center;
+    background-color: #000;
+}
+
+.mersedes .text {
+    width: 900px;
+    height: 421px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+h2 {
+    width: 700px;
+    cursor: pointer;
+    color: #fff;
+}
+
+p {
+    width: 600px;
+    cursor: pointer;
+    color: #fff;
+}
+.text button {
+    width: 226px;
+    height: 35px;
+    border: none;
+    color: #FFF;
+    background-color: #00adef;
+}
+
+.text button:hover {
+    background-color: blue;
+
+}
+
+.responsive {
+    width: 100%;
+    height: 168px;
+    display: grid;
+    place-items: center;
+    background-color: #000;
+}
+
+.responsive .loaded {
+    width: 960px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.loaded img {
+    width: 299px;
+    height: 168px;
+  
+}
+
+
+    
+
+.btn {
+    width: 100%;
+    height: 119px;
+    display: grid;
+    place-items: center;
+    background-color: #000;
+}
+
+.btn .btnsgroup {
+    width: 15%;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.btnsgroup  .icon {
+    color: #fff;
+}
+
+.icon:hover {
+    color: #00adef;
+}
+
+
+.btnsgroup  .icon1 {
+    color: #00adef;
+}
+
+
+.heder {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    place-items: center;
+    
+}
+
+.img {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    background-color: #333333;
+}
+
+.ing {
+    width: 90%;
+    height: 100vh;
+    position: relative;
+}
+
+.ing .imgs1 {
+   width: 838px;
+   height: 471px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: flex-start;
+   background-image: url(https://www.mercedes-benz.com/en/_jcr_content/root/slider_copy_copy_cop/sliderchilditems/slideritem/image/MQ7-0-image-20220214080248/mercedes-benz-g-class-endurance-campaign-3400x1440-02-2022.jpeg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+ 
+}
+
+.ing .imgs2 {
+    width: 418px;
+    height: 235px;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    top: 0;
+    right: 450px;
+    background-image: url(https://www.mercedes-benz.com/en/sports/motorsports/_jcr_content/image/MQ6-8-image-20190304155936/M184789JPG.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+ }
+
+ .ing .imgs3 {
+    width: 418px;
+    height: 235px;
+    top: 200px;
+    position: absolute;
+    top: 0;
+    left: 1270px;
+    background-image: url(https://www.mercedes-benz.com/en/sports/esports/successful-premiere-of-the-sk-gaming-ejuniorcup/_jcr_content/image/MQ6-8-image-20220314174431/Headerbild_Mobil.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .ing .imgs4 {
+    width: 418px;
+    height: 235px;
+    position: absolute;
+    top: 240px;
+    right: 450px;
+    background-image: url(https://www.mercedes-benz.com/en/eq-formulae/we-race-the-city/team/stoffel-vandoorne/_jcr_content/image/MQ6-8-image-20211216113450/mercedes-eq-formula-e-team-stoffel-vandoorne-2022_V2jpeg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .ing .imgs5 {
+    width: 418px;
+    height: 235px;
+    position: absolute;
+    top: 240px;
+    left: 1270px;
+    background-image: url(https://www.mercedes-benz.com/en/eq-formulae/we-race-the-city/team/nyck-de-vries/_jcr_content/image/MQ6-8-image-20211216113451/mercedes-eq-formula-e-team-nyck-de-vries-2022_V2jpeg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .ing .imgs6 {
+    width: 418px;
+    height: 235px;
+    position: absolute;
+    top: 480px;
+    left: 0;
+    background-image: url(https://www.mercedes-benz.com/en/eq-formulae/we-race-the-city/team/mercedes-eq-silver-arrow-02/_jcr_content/image/MQ6-8-image-20211124161106/mercedes-eq-formula-e-team-silver-arrow-02-season-8-id09jpeg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .ing .imgs7 {
+    width: 418px;
+    height: 235px;
+    position: absolute;
+    top: 480px;
+    right: 873px;
+    background-image: url(https://www.mercedes-benz.com/en/eq-formulae/we-drive-the-city/mercedes-eq-run-2022/_jcr_content/image/MQ6-8-image-20220322111014/mercedes-eq-run-2022-07-16-9jpeg.jpeg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .ing .imgs8 {
+    width: 418px;
+    height: 235px;
+    position: absolute;
+    top: 480px;
+    right: 450px;
+    background-image: url(https://www.mercedes-benz.com/en/eq-formulae/_jcr_content/image/MQ6-8-image-20200727152825/Mercedes-Benz-EQ-Formula_E_Team_santiago_teserjpeg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .ing .imgs9 {
+    width: 418px;
+    height: 235px;
+    position: absolute;
+    top: 480px;
+    left: 1270px;
+    background-image: url(https://www.mercedes-benz.com/en/_jcr_content/root/slider_copy_copy_cop/sliderchilditems/slideritem_194632730/image/MQ7-0-image-20220202085701/mercedes-benz-g-class_3400x1440.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+  .imgs2 .text_img {
+     width: 580px;
+     height: 50%;
+     display: flex;
+ 
+ }
+
+ .footnotes {
+     width: 100%;
+     height: 471px;
+     display: grid;
+     place-items: center;
+     
+ }
+
+ .footnotes .spans {
+     width: 85%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+ 
+ }
+
+ .spans .divv { 
+     width: 100%;
+     height:43px ;
+     margin-bottom: 20px;
+     color: #fff;
+   
+ } 
+
+ .spans p {
+     width: 100%;
+     height: 100%;
+     font-size: 14px;
+ }
+
+ .divv i {
+     padding: 20px;
+ }
+
+ .footer {
+     width: 100%;
+     height: 791px;
+     display: flex;
+   align-items: center;
+   flex-direction: column;
+     background-color: #000;
+ }
+ 
+
+ .footer .wrap {
+     width: 85%;
+     height: 346px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     align-items: center;
+     justify-content: space-between;
+     justify-content: space-between;
+
+ }
+
+.wrap .h2 {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.UL {
+    width: 100%;
+    height:320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+hr {
+    width: 85%;
+    height: 2px;
+    background-color: #fff;
+}
+ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+ul li {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+}
+
+ 
+
+ .footer .contain {
+     width: 85%;
+     height: 210px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+ 
+ }
+
+ .p {
+     width: 657px;
+     height: 44px;
+    
+ }
+
+ .icons {
+     width: 400px;
+     height: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+ 
+ }
+
+ .icons i {
+     font-size: 30px;
+     color: #fff;
+     cursor: pointer;
+ }
+
+ .vy {
+     width: 85%;
+     height: 50px;
+ }
+
+ .btns {
+     width: 85%;
+     height: 67px;
+    display: flex;
+    align-items: center;
+ }
+
+
+
+ .bntns span a:hover {
+     color: #00adef;
+ }
+.btns span {
+    color: #fff;
+}
+ .end {
+     width: 100%;
+     height: 50px;
+
+ }
+
+ 
