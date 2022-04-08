@@ -365,6 +365,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
     
 }
 
@@ -404,6 +405,7 @@ p {
 
 
 .btnsgroup  .icon1 {
+    position: relative;
     color: #00adef;
 }
 
@@ -704,4 +706,71 @@ ul li {
 
  }
 
- 
+ .text_img::before {
+    content: 'jgydjvgjdsb';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #8080807c;
+    backdrop-filter: blur(5px);
+    transition: .5s;
+ }
+
+
+.text_img:hover::before {
+    height: 200px;
+    background-color: #808080b1;
+}
+
+
+.loaded .hover {
+    width:299px ;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.loaded .hover:hover {
+    background-color: blue;
+}
+
+
+
+.loaded .hover1 {
+    width:299px ;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+
+
+.loaded .hover1:hover {
+    background-color: blue;
+}
+
+
+
+.loaded .hover2 {
+    width:299px ;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+
+.loaded .hover2:hover {
+    background-color: blue;
+}
+
+.icon1 .before {
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    top: 30px;
+    right: 3px;
+    background-color: blue;
+    border-radius: 3px;
+}
